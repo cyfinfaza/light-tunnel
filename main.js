@@ -41,6 +41,7 @@ function initCore() {
 	renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.shadowMapEnabled = true;
 	renderer.setSize(windowWidth, windowHeight);
+	setPixelRatio(window.devicePixelRatio);
 	window.addEventListener("resize", _ => {
 		windowWidth = window.innerWidth;
 		windowHeight = window.innerHeight;
