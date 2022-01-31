@@ -193,5 +193,8 @@ window.addEventListener("keydown", e => {
 		case "s":
 			avatar.desiredPosition.z -= 1;
 			break;
+		case "h":
+			document.getElementById("controls").style.display = "none";
+			break;
 	}
 });
